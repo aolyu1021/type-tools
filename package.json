@@ -1,11 +1,17 @@
 {
-  "name": "type-tools",
+  "name": "js-type-tools",
   "version": "0.0.1",
   "description": "ALY's type tools.",
-  "main": "index.ts",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish": "npm publish"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aolyu1021/type-tools.git"
@@ -23,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/aolyu1021/type-tools/issues"
   },
-  "homepage": "https://github.com/aolyu1021/type-tools#readme"
+  "homepage": "https://github.com/aolyu1021/type-tools#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
